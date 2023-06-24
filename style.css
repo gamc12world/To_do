@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(rgb(150, 107, 107),rgb(141, 175, 141));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+input{
+    background-color: saddlebrown;
+    margin: 200px;
+    margin-top: 20px;
+    height: 40px;
+    width: 1000px;
+    color: blue;
+    font-size: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+#id1{
+    color: blueviolet;
+    font-size: 60px;
+    margin: 200px;
+    margin-top: -200px;
+}
