@@ -1,14 +1,20 @@
-const input=document.querySelector('#in1')
-const btn=document.querySelector('#btn')
-const box=document.querySelector('#box')
-input.addEventListener('input',(e)=>{
-    if(e){
-        let p=document.createElement('p')
-        p.innerHTML=`<b>${e.target.value}</b>`
-        document.body.append(p)
+const input = document.querySelector("#in1");
+const btn = document.querySelector("#btn");
+const box = document.querySelector("#box");
+input.addEventListener("input", (e) => {
+  let x = e.target.value;
+  if (e.target) {
+    if (
+      btn.addEventListener("click", (e) => {
+        if (e.target) {
+          box.innerHTML = `<b>${x}</b>`;
+          document.body.append(box);
+        }
+      })
+    ) {
     }
-    console.log(e.target.value.toString().split(''))
-})
-btn.addEventListener('click',()=>{
-    console.log('btn clicked')
-})
+  }
+});
+btn.addEventListener("click", () => {
+  console.log("btn clicked");
+});
